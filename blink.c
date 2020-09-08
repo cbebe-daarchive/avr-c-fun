@@ -15,6 +15,7 @@ int main() {
     setBit(LED_DDR, LED);
     while (1) {
         toggleBit(LED_PORT, LED);
+        // uses polling; busy waiting, not very efficient
         _delay_ms(BLINK_MS);
     }
 }
