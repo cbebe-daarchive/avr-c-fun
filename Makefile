@@ -2,9 +2,9 @@
 CC=avr-gcc
 CFLAGS=-Os -DF_CPU=16000000UL -mmcu=atmega328p
 
-all: blink.out
+all: blink.out blink-timers.out
 
-USBPORT:=/dev/ttyS3
+USBPORT:=/dev/ttyACM*
 
 %.out: %.c
 	$(CC) $(CFLAGS) $< -o $@
