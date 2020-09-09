@@ -304,3 +304,5 @@ Packages
 - AVR Site: [www.littlehacks.org]
 - Old material from AVR Classes: [https://wiki.hacdc.org/index.php?title=AVR_Microcontroller_Class_2011]
 - Bruce Land's Cornell University Engineering Course (for the serious down low)
+- Hackaday, Make blog, Sparkfun, LadyAda for inspiration
+- VUSBTiny Project (build your own minimal programmer)
