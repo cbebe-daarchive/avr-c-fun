@@ -4,6 +4,7 @@
  * Code example from: https://embedds.com/interfacing-shift-register-with-avr/
  */
 
+#include <avr/interrupt.h>
 #include <avr/io.h>
 #include <util/delay.h>
 
