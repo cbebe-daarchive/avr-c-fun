@@ -90,7 +90,7 @@ ISR(TIMER1_COMPA_vect) {
 }
 
 int main() {
-    setBit(LED_DDR, LED);
+    shiftInit();
     // OCR1A = output compare register for Timer 1
     OCR1A = COUNTER_VALUE;
 
