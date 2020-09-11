@@ -99,8 +99,8 @@ int main() {
 
     // Timer counter configuration register for Timer 1
     TCCR1A = 0x00;
-    setBit(TCCR1B, WGM12);          // CTC Mode - compare to OCR1A
-    TCCR1B |= BV(CS10) | BV(CS12);  // Set Prescaler to 1024
+    // CTC Mode - compare to OCR1A - set prescaler to 1024
+    TCCR1B |= BV(CS10) | BV(CS12) | BV(WGM12);
 
     // get an interrupt
     setBit(TIMSK1, OCIE1A);
